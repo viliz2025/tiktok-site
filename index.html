@@ -2,7 +2,6 @@
   :root{
     --bg:#08080b;
     --panel:#11111a;
-    --panel2:#171725;
     --text:#f8f9fc;
     --muted:#bcc3d4;
     --line:rgba(255,255,255,.09);
@@ -10,13 +9,14 @@
     --cyan:#19f2ff;
     --violet:#7a5cff;
     --yellow:#ffd84d;
-    --green:#2ee59d;
     --radius:24px;
     --shadow:0 24px 80px rgba(0,0,0,.5);
     --max:1180px;
   }
+
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
+
   body{
     margin:0;
     color:var(--text);
@@ -50,10 +50,7 @@
   .ttvzlet-wrap .btn--primary:link,
   .ttvzlet-wrap .btn--primary:visited,
   .ttvzlet-wrap .btn--primary:hover,
-  .ttvzlet-wrap .btn--primary:active{
-    color:#ffffff !important;
-  }
-
+  .ttvzlet-wrap .btn--primary:active,
   .ttvzlet-wrap .btn--ghost,
   .ttvzlet-wrap .btn--ghost:link,
   .ttvzlet-wrap .btn--ghost:visited,
@@ -243,20 +240,20 @@
   .ttvzlet-wrap h3{margin:0 0 16px}
 
   .ttvzlet-wrap h1{
-    font-size:clamp(38px,6vw,70px);
-    line-height:1;
+    font-size:clamp(40px,6vw,70px);
+    line-height:1.02;
     letter-spacing:-.04em;
   }
 
   .ttvzlet-wrap h2{
-    font-size:clamp(28px,4vw,42px);
+    font-size:clamp(30px,4vw,42px);
     line-height:1.08;
     letter-spacing:-.03em;
   }
 
   .ttvzlet-wrap h3{
     font-size:22px;
-    line-height:1.12;
+    line-height:1.18;
   }
 
   .ttvzlet-wrap .lead{
@@ -376,6 +373,7 @@
   .ttvzlet-wrap .mini__value{
     font-size:20px;
     font-weight:800;
+    line-height:1.35;
   }
 
   .ttvzlet-wrap .section{padding:22px 0 54px}
@@ -402,6 +400,8 @@
   .ttvzlet-wrap .feature p{
     margin:0;
     color:var(--muted);
+    font-size:16px;
+    line-height:1.6;
   }
 
   .ttvzlet-wrap .feature__icon{
@@ -462,6 +462,8 @@
     border-radius:18px;
     background:var(--panel);
     border:1px solid var(--line);
+    font-size:16px;
+    line-height:1.6;
   }
 
   .ttvzlet-wrap .check{
@@ -530,14 +532,206 @@
   }
 
   @media (max-width: 980px){
+    .ttvzlet-wrap .wrap{
+      width:min(var(--max), calc(100% - 20px));
+    }
+
+    .ttvzlet-wrap .nav{
+      position:relative !important;
+      top:auto !important;
+    }
+
+    .ttvzlet-wrap .nav__in{
+      min-height:auto;
+      padding:10px 0 12px;
+      align-items:flex-start;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .ttvzlet-wrap .brand__badge{
+      width:38px;
+      height:38px;
+      border-radius:12px;
+    }
+
+    .ttvzlet-wrap .brand__name{
+      font-size:16px;
+    }
+
+    .ttvzlet-wrap .nav__links{
+      width:100%;
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch;
+      flex-wrap:nowrap;
+      gap:8px;
+      padding-bottom:4px;
+    }
+
+    .ttvzlet-wrap .nav__links a{
+      flex:0 0 auto;
+      padding:9px 12px;
+      font-size:12px;
+      white-space:nowrap;
+    }
+
+    .ttvzlet-wrap .hero,
+    .ttvzlet-wrap .section,
+    .ttvzlet-wrap .footer{
+      padding:16px 0 20px;
+    }
+
     .ttvzlet-wrap .hero__grid,
     .ttvzlet-wrap .grid3,
-    .ttvzlet-wrap .grid2{grid-template-columns:1fr}
+    .ttvzlet-wrap .grid2{
+      grid-template-columns:1fr;
+      gap:14px;
+    }
 
-    .ttvzlet-wrap .nav{position:relative !important; top:auto !important;}
-    .ttvzlet-wrap .nav__in{padding:10px 0}
-    .ttvzlet-wrap .nav__links{overflow-x:auto; -webkit-overflow-scrolling:touch; flex-wrap:nowrap}
-    .ttvzlet-wrap .footnote{flex-direction:column}
+    .ttvzlet-wrap .card,
+    .ttvzlet-wrap .mini,
+    .ttvzlet-wrap .feature,
+    .ttvzlet-wrap .cta,
+    .ttvzlet-wrap .step,
+    .ttvzlet-wrap .list li{
+      border-radius:18px;
+    }
+
+    .ttvzlet-wrap .hero__main,
+    .ttvzlet-wrap .feature,
+    .ttvzlet-wrap .cta{
+      padding:18px;
+    }
+
+    .ttvzlet-wrap .side{
+      padding:0;
+      gap:10px;
+    }
+
+    .ttvzlet-wrap .mini{
+      padding:16px;
+    }
+
+    .ttvzlet-wrap h1{
+      font-size:34px;
+      line-height:1.08;
+      letter-spacing:-.03em;
+      margin:0 0 14px;
+    }
+
+    .ttvzlet-wrap h2{
+      font-size:28px;
+      line-height:1.12;
+      margin:0 0 12px;
+    }
+
+    .ttvzlet-wrap h3{
+      font-size:21px;
+      line-height:1.2;
+      margin:0 0 10px;
+    }
+
+    .ttvzlet-wrap .lead{
+      font-size:18px;
+      line-height:1.55;
+      max-width:none;
+    }
+
+    .ttvzlet-wrap p,
+    .ttvzlet-wrap li,
+    .ttvzlet-wrap .muted,
+    .ttvzlet-wrap .mini__value,
+    .ttvzlet-wrap .feature p,
+    .ttvzlet-wrap .list li span:last-child{
+      font-size:16px;
+      line-height:1.6;
+    }
+
+    .ttvzlet-wrap .eyebrow,
+    .ttvzlet-wrap .fr-pill{
+      font-size:12px;
+      line-height:1.4;
+      padding:8px 12px;
+      margin-bottom:14px;
+    }
+
+    .ttvzlet-wrap .hero-icons{
+      gap:8px;
+      margin-top:16px;
+    }
+
+    .ttvzlet-wrap .hero-icon{
+      width:38px;
+      height:38px;
+      border-radius:12px;
+      font-size:16px;
+    }
+
+    .ttvzlet-wrap .ticker{
+      gap:8px;
+      margin-top:14px;
+    }
+
+    .ttvzlet-wrap .ticker span,
+    .ttvzlet-wrap .chip{
+      font-size:12px;
+      padding:8px 10px;
+    }
+
+    .ttvzlet-wrap .actions{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+      margin-top:18px;
+    }
+
+    .ttvzlet-wrap .btn{
+      width:100%;
+      min-height:52px;
+      padding:12px 16px;
+      text-align:center;
+      font-size:15px;
+      line-height:1.35;
+    }
+
+    .ttvzlet-wrap .list{
+      gap:10px;
+    }
+
+    .ttvzlet-wrap .list li{
+      padding:14px;
+      gap:10px;
+    }
+
+    .ttvzlet-wrap .check{
+      flex:0 0 22px;
+      height:22px;
+      font-size:12px;
+    }
+
+    .ttvzlet-wrap .timeline{
+      gap:10px;
+    }
+
+    .ttvzlet-wrap .step{
+      grid-template-columns:56px 1fr;
+      gap:12px;
+      padding:14px;
+    }
+
+    .ttvzlet-wrap .step__num{
+      min-height:50px;
+      border-radius:14px;
+      font-size:13px;
+    }
+
+    .ttvzlet-wrap .footnote{
+      flex-direction:column;
+      padding:16px;
+      gap:8px;
+      font-size:13px;
+      line-height:1.5;
+    }
   }
 </style>
 
@@ -834,7 +1028,7 @@
         <div class="actions">
           <a class="btn btn--ghost" href="https://docs.google.com/document/d/1cMkYHKNVPMEzhScctEYimjvax1l4iQduyBtDbnUi51o/edit?usp=drivesdk" target="_blank" rel="noopener">1. Правила участия</a>
           <a class="btn btn--ghost" href="https://docs.google.com/document/d/16DFhgiDe1RmqUrNZgzUDa3OuArM_muxmT2W3za3k-dE/edit?usp=drivesdk" target="_blank" rel="noopener">2. Финансовые условия</a>
-          <a class="btn btn--primary" href="https://docs.google.com/document/d/1n-VsFQNBYGK6UhcomV2Zvq_ftS3sIfjrP9vWhMBAoug/edit?usp=drivesdk" target="_blank" rel="noopener">3. Соглашение по контенту</a>
+          <a class="btn btn--primary" href="https://docs.google.com/document/d/1UvNlIfd2ZzOoZ3q6ltYDRCRH07P-bBs_qeRDNxuBnJM/edit?tab=t.0" target="_blank" rel="noopener">3. Соглашение по контенту</a>
         </div>
       </div>
     </div>
@@ -848,3 +1042,4 @@
     </div>
   </section>
 </div>
+
