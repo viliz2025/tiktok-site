@@ -1,12 +1,3 @@
-<!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tik Tok Взлёт</title>
-  <meta name="description" content="TikTok-проект для авторов: правила, финансовые условия и документы.">
-</head>
-<body>
 <style>
   :root{
     --bg:#08080b;
@@ -24,10 +15,8 @@
     --shadow:0 24px 80px rgba(0,0,0,.5);
     --max:1180px;
   }
-
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-
   body{
     margin:0;
     color:var(--text);
@@ -40,7 +29,6 @@
     line-height:1.5;
   }
 
-  /* FIX FOR TILDA LINK COLORS */
   .ttvzlet-wrap a,
   .ttvzlet-wrap a:link,
   .ttvzlet-wrap a:visited,
@@ -546,7 +534,9 @@
     .ttvzlet-wrap .grid3,
     .ttvzlet-wrap .grid2{grid-template-columns:1fr}
 
+    .ttvzlet-wrap .nav{position:relative !important; top:auto !important;}
     .ttvzlet-wrap .nav__in{padding:10px 0}
+    .ttvzlet-wrap .nav__links{overflow-x:auto; -webkit-overflow-scrolling:touch; flex-wrap:nowrap}
     .ttvzlet-wrap .footnote{flex-direction:column}
   }
 </style>
@@ -556,9 +546,10 @@
     <div class="wrap nav__in">
       <div class="brand">
         <div class="brand__badge"></div>
-        <div class="brand__name">Tik Tok Взлёт</div>
+        <div class="brand__name">VibeHouse</div>
       </div>
       <div class="nav__links">
+        <a href="#about">Кто мы</a>
         <a href="#why">Что ты получаешь</a>
         <a href="#format">Формат</a>
         <a href="#money">Перспективы</a>
@@ -574,13 +565,13 @@
     <div class="wrap hero__grid">
       <div class="card hero__main">
         <div class="eyebrow">TikTok-проект • один аккаунт • несколько авторов</div>
-        <h1>Залетай в <span class="accent">Tik Tok Взлёт</span><br>и делай контент, который даст тебе просмотры, деньги и новые возможности.</h1>
+        <h1>Залетай в <span class="accent">VibeHouse</span><br>и делай контент, который даст тебе просмотры, деньги и новые возможности.</h1>
         <p class="lead">
-          Проект работает через <strong>Францию</strong>.<br>
-          Это реально даёт тебе выход на монетизацию, Европу и более сильный рекламный рынок.
+          Проект идёт через <strong>Францию</strong>.<br>
+          А это реально даёт тебе выход на монетизацию, Европу и рынок, где рекламных денег заметно больше.
         </p>
 
-        <div class="fr-pill"><span class="flag-fr"></span> Франция — база проекта для выхода на Европу</div>
+        <div class="fr-pill"><span class="flag-fr"></span> Франция — твой выход на Европу</div>
 
         <div class="hero-icons">
           <div class="hero-icon">🎵</div>
@@ -612,12 +603,59 @@
         </div>
         <div class="mini">
           <div class="mini__label">Почему тут легче</div>
-          <div class="mini__value">Ты в системе, а не один на один со всем этим</div>
+          <div class="mini__value">Здесь проще держать ритм, не сливаться и расти вместе с другими.</div>
         </div>
         <div class="mini">
           <div class="mini__label">Темп</div>
           <div class="mini__value">5 видео в неделю</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap grid2">
+      <div class="card feature">
+        <div class="feature__tag">WHO WE ARE</div>
+        <div class="feature__icon">✨</div>
+        <h2>Кто мы</h2>
+        <p>VibeHouse energy — это не просто танцевальный проект. Это живое молодёжное сообщество, где ребята 18–25 лет из разных городов и стран танцуют вместе, даже если находятся далеко друг от друга.</p>
+      </div>
+
+      <div class="card feature">
+        <div class="feature__tag">VIBE</div>
+        <div class="feature__icon">🔥</div>
+        <h3>Один общий вайб</h3>
+        <p>Мы разные по характеру, стилю и энергетике, но нас объединяет одно: любовь к движению, трендовой музыке и настоящему вайбу. Здесь нет скучных тренировок и одинаковости — только драйв, кайф и свобода быть собой.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap grid2">
+      <div class="card feature">
+        <div class="feature__tag">COLLABS</div>
+        <div class="feature__icon">🎥</div>
+        <h3>Снимаем откуда угодно</h3>
+        <p>Каждый снимает у себя дома, на улице, в студии или где удобно. Но когда наши видео соединяются, получается одна большая заряженная тусовка. Мы делаем дуэты, коллабы, общие танцы и делимся своей энергией.</p>
+      </div>
+
+      <div class="card feature">
+        <div class="feature__tag">YOU</div>
+        <div class="feature__icon">💖</div>
+        <h3>Кого мы ищем</h3>
+        <p>Мы ищем тех, кому 18–25, кто любит танцевать под трендовые треки, кто заряжается от движения и хочет быть частью большого молодёжного проекта. Не важно, из какого ты города или страны — если внутри у тебя огонь, ты уже нам подходишь.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="card feature">
+        <div class="feature__tag">BE YOURSELF</div>
+        <div class="feature__icon">🫶</div>
+        <h3>Здесь можно быть собой</h3>
+        <p>Здесь твоя индивидуальность — это не минус, а часть общего вайба. Здесь мы танцуем не ради идеальной картинки, а потому что нам реально в кайф. Хочешь зажигать вместе с нами? Тогда ты по адресу.</p>
       </div>
     </div>
   </section>
@@ -632,20 +670,20 @@
         <div class="card feature">
           <div class="feature__tag">START</div>
           <div class="feature__icon">🚀</div>
-          <h3>Понятный путь</h3>
-          <p>Ты заходишь туда, где уже есть система, а не начинаешь всё с нуля сам.</p>
+          <h3>Старт без лишней суеты</h3>
+          <p>Ты заходишь туда, где уже всё собрано, а не пытаешься тащить запуск с нуля сам.</p>
         </div>
         <div class="card feature">
           <div class="feature__tag">TEAM</div>
           <div class="feature__icon">👥</div>
           <h3>Не нужно тащить всё одному</h3>
-          <p>Есть ритм, процесс, команда и среда, где проще держаться и не сливаться.</p>
+          <p>Есть команда, общий движ и ритм, в котором проще держаться и не выпадать.</p>
         </div>
         <div class="card feature">
           <div class="feature__tag">RESULT</div>
           <div class="feature__icon">💸</div>
-          <h3>Контент с перспективой</h3>
-          <p>Твой контент работает не только на просмотры, но и на деньги, рост и новые возможности.</p>
+          <h3>Контент, который может дать больше</h3>
+          <p>Твой контент здесь — не просто ради просмотров, а с понятным выходом в деньги, рост и новые возможности.</p>
         </div>
       </div>
     </div>
@@ -654,12 +692,12 @@
   <section class="section">
     <div class="wrap grid2">
       <div>
-        <h2>Почему тут выгоднее, чем одному</h2>
+        <h2>Почему тут легче, чем одному</h2>
         <ul class="list">
           <li><span class="check">✓</span><span>Не надо тянуть весь путь на себе</span></li>
           <li><span class="check">✓</span><span>Проще держать темп и не выпадать</span></li>
-          <li><span class="check">✓</span><span>Легче расти внутри системы</span></li>
-          <li><span class="check">✓</span><span>У контента больше возможностей вырасти в результат</span></li>
+          <li><span class="check">✓</span><span>Легче расти, когда ты не один</span></li>
+          <li><span class="check">✓</span><span>У твоего контента больше шансов дойти до реального результата</span></li>
         </ul>
       </div>
 
@@ -667,7 +705,7 @@
         <div class="feature__tag">UPGRADE</div>
         <div class="feature__icon">📈</div>
         <h3>Если совсем просто</h3>
-        <p>Ты здесь, чтобы твой контент рос дальше: в охваты, деньги, личный бренд и реальные возможности.</p>
+        <p>Ты здесь, чтобы твой контент вёл тебя дальше: в охваты, деньги, личный бренд и новые возможности.</p>
         <div class="actions" style="margin-top:18px">
           <a class="btn btn--ghost" href="https://docs.google.com/document/d/1cMkYHKNVPMEzhScctEYimjvax1l4iQduyBtDbnUi51o/edit?usp=drivesdk" target="_blank" rel="noopener">Открыть правила</a>
         </div>
@@ -695,27 +733,27 @@
   <section class="section">
     <div class="wrap grid2">
       <div>
-        <h2>Что важно от тебя</h2>
+        <h2>Что важно с твоей стороны</h2>
         <ul class="list">
           <li><span class="check">✓</span><span>Естественно чувствовать себя в кадре</span></li>
           <li><span class="check">✓</span><span>Чувствовать TikTok-формат</span></li>
           <li><span class="check">✓</span><span>Следить за трендами</span></li>
-          <li><span class="check">✓</span><span>Базово уметь в CapCut</span></li>
+          <li><span class="check">✓</span><span>Хотя бы на базовом уровне уметь в CapCut</span></li>
           <li><span class="check">✓</span><span>Держать ритм публикаций</span></li>
           <li><span class="check">✓</span><span>Не пропадать</span></li>
         </ul>
       </div>
 
       <div>
-        <h2>Как всё идёт</h2>
+        <h2>Как всё происходит</h2>
         <div class="timeline">
           <div class="step">
             <div class="step__num">1</div>
-            <div><strong>Снимаешь ролик</strong><div class="muted">По формату проекта.</div></div>
+            <div><strong>Снимаешь ролик</strong><div class="muted">Под формат проекта.</div></div>
           </div>
           <div class="step">
             <div class="step__num">2</div>
-            <div><strong>Кидаешь в чат</strong><div class="muted">Дальше он проходит отбор.</div></div>
+            <div><strong>Кидаешь в чат</strong><div class="muted">Дальше мы смотрим, подходит он или нет.</div></div>
           </div>
           <div class="step">
             <div class="step__num">3</div>
@@ -723,7 +761,7 @@
           </div>
           <div class="step">
             <div class="step__num">4</div>
-            <div><strong>Идёт в публикацию</strong><div class="muted">Если подходит по формату.</div></div>
+            <div><strong>Идёт в публикацию</strong><div class="muted">Если ролик попадает в формат проекта.</div></div>
           </div>
         </div>
       </div>
@@ -733,7 +771,7 @@
   <section class="section" id="money">
     <div class="wrap">
       <div class="head">
-        <h2>Что тут по перспективам</h2>
+        <h2>Что это может дать тебе дальше</h2>
       </div>
 
       <div class="grid3">
@@ -741,13 +779,13 @@
           <div class="feature__tag">EU</div>
           <div class="feature__icon">🇫🇷</div>
           <h3>Франция и Европа</h3>
-          <p>Проект завязан на Францию. Это усиливает выход на европейский рекламный рынок.</p>
+          <p>Проект идёт через Францию. Это даёт тебе более реальный выход на европейский рынок и рекламу с более сильными бюджетами.</p>
         </div>
         <div class="card feature">
           <div class="feature__tag">YOU</div>
           <div class="feature__icon">⭐</div>
           <h3>Личный бренд</h3>
-          <p>Контент здесь может усиливать не только просмотры, но и тебя как автора.</p>
+          <p>Контент здесь может качать не только просмотры, но и тебя как автора и как личный бренд.</p>
         </div>
         <div class="card feature">
           <div class="feature__tag">BOOST</div>
@@ -766,22 +804,22 @@
   <section class="section">
     <div class="wrap grid2">
       <div>
-        <h2>Что здесь есть</h2>
+        <h2>Что ты здесь получаешь</h2>
         <ul class="list">
-          <li><span class="check">✓</span><span>Система</span></li>
+          <li><span class="check">✓</span><span>Команда и общий вайб</span></li>
           <li><span class="check">✓</span><span>Понятные правила</span></li>
-          <li><span class="check">✓</span><span>Рабочий поток</span></li>
+          <li><span class="check">✓</span><span>Понятный движ по шагам</span></li>
           <li><span class="check">✓</span><span>Поддержка</span></li>
-          <li><span class="check">✓</span><span>Рост в деньги, бренд и новые возможности</span></li>
+          <li><span class="check">✓</span><span>Выход в деньги, личный бренд и новые возможности</span></li>
         </ul>
       </div>
 
       <div>
-        <h2>Чего здесь нет</h2>
+        <h2>Чего тут ждать не стоит</h2>
         <ul class="list">
-          <li><span class="check">—</span><span>Быстрых денег за неделю</span></li>
+          <li><span class="check">—</span><span>Мгновенных денег за пару дней</span></li>
           <li><span class="check">—</span><span>Автопубликации каждого ролика</span></li>
-          <li><span class="check">—</span><span>Гарантий, что каждый ролик залетит</span></li>
+          <li><span class="check">—</span><span>Гарантий, что залетит каждый ролик</span></li>
           <li><span class="check">—</span><span>Одинаковых выплат по всем видео</span></li>
         </ul>
       </div>
@@ -791,12 +829,12 @@
   <section class="section" id="docs">
     <div class="wrap">
       <div class="cta">
-        <h2>Что открыть дальше</h2>
-        <p>Сначала правила, потом финансовые условия, и последний шаг — соглашение по контенту.</p>
+        <h2>Что смотреть дальше</h2>
+        <p>Сначала глянь правила, потом финансовые условия, и последний шаг — соглашение по контенту.</p>
         <div class="actions">
           <a class="btn btn--ghost" href="https://docs.google.com/document/d/1cMkYHKNVPMEzhScctEYimjvax1l4iQduyBtDbnUi51o/edit?usp=drivesdk" target="_blank" rel="noopener">1. Правила участия</a>
           <a class="btn btn--ghost" href="https://docs.google.com/document/d/16DFhgiDe1RmqUrNZgzUDa3OuArM_muxmT2W3za3k-dE/edit?usp=drivesdk" target="_blank" rel="noopener">2. Финансовые условия</a>
-          <a class="btn btn--primary" href="https://docs.google.com/document/d/1UvNlIfd2ZzOoZ3q6ltYDRCRH07P-bBs_qeRDNxuBnJM/edit?tab=t.0" target="_blank" rel="noopener">3. Соглашение по контенту</a>
+          <a class="btn btn--primary" href="https://docs.google.com/document/d/1n-VsFQNBYGK6UhcomV2Zvq_ftS3sIfjrP9vWhMBAoug/edit?usp=drivesdk" target="_blank" rel="noopener">3. Соглашение по контенту</a>
         </div>
       </div>
     </div>
@@ -805,10 +843,8 @@
   <section class="footer">
     <div class="wrap">
       <div class="footnote">
-        <div>© Tik Tok Взлёт, 2026 • защищено авторским правом</div>
+        <div>© VibeHouse, 2026 • защищено авторским правом</div>
       </div>
     </div>
   </section>
 </div>
-</body>
-</html>
